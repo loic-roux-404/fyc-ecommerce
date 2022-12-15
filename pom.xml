@@ -12,7 +12,10 @@
     <name>fyc-ekommerce</name>
   <url> https://www.ekommerce.com</url>
     <modules>
-        <module>client</module>
+      <module>client</module>
+      <module>produit</module>
+      <module>commande</module>
+      <module>paiement</module>
     </modules>
 
 
