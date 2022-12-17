@@ -1,8 +1,11 @@
 package com.zizou.fyc.client;
 
+import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 @Service
-public record ClientService(ClientRepository clientRepository) {
+@AllArgsConstructor
+public class ClientService {
+    private ClientRepository clientRepository;
     public void registerClient(ClientRegistrationRequest request) {
         Client client = Client.builder()
             .lastName(request.lastName())
