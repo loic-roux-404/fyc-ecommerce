@@ -20,12 +20,12 @@ public class Client {
 
     @Id
     @SequenceGenerator(
-            name = "customer_id_sequence",
-            sequenceName = "customer_id_sequence"
+            name = "client_id_sequence",
+            sequenceName = "client_id_sequence"
     )
     @GeneratedValue(
             strategy = GenerationType.SEQUENCE,
-            generator = "customer_id_sequence"
+            generator = "client_id_sequence"
     )
     private Integer id;
     private String firstName;

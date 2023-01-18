@@ -27,6 +27,7 @@ public class FraudeCheckHistory {
           strategy = GenerationType.SEQUENCE,
           generator = "fraude_id_sequence"
   )
+  private Integer id;
   private Integer clientId;
   private Boolean isFraudster;
   private LocalDateTime createdAt;
